@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">DrDiplo Doctor D icon</title>
+  <desc id="desc">A simplified teal D character with a friendly face, ink scrub collar, and gold stethoscope detail.</desc>
+  <defs>
+    <clipPath id="dBody">
+      <path d="M32 19h22c28 0 47 18 47 45s-19 45-47 45H32V19Z"/>
+    </clipPath>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="#EAF2F0"/>
+  <path d="M32 19h22c28 0 47 18 47 45s-19 45-47 45H32V19Z" fill="#147D78"/>
+  <ellipse cx="52" cy="54" rx="4.8" ry="6.4" fill="#17324D"/>
+  <ellipse cx="75" cy="54" rx="4.8" ry="6.4" fill="#17324D"/>
+  <circle cx="53.5" cy="52" r="1.5" fill="#FFFFFF"/>
+  <circle cx="76.5" cy="52" r="1.5" fill="#FFFFFF"/>
+  <path d="M51 69c4 6 9 9 15 9s11-3 15-9" fill="none" stroke="#17324D" stroke-width="3.4" stroke-linecap="round"/>
+  <g clip-path="url(#dBody)">
+    <path d="M25 88h31l8 9 8-9h36v26H25V88Z" fill="#17324D"/>
+    <path d="m56 88 8 9 8-9" fill="none" stroke="#FCFBF8" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M82 92v9c0 5 4 7 8 7" fill="none" stroke="#D9A441" stroke-width="2.6" stroke-linecap="round"/>
+    <circle cx="91" cy="108" r="3.5" fill="#D9A441"/>
+  </g>
+</svg>
