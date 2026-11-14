@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" role="img" aria-labelledby="title">
+  <title id="title">DrDiplo forward D icon</title>
+  <rect width="140" height="140" rx="34" fill="#147D78"/>
+  <path d="M40 36h28c23 0 38 13 38 34S91 104 68 104H40V36Z" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linejoin="round"/>
+  <path d="M74 70h43" stroke="#E7A84B" stroke-width="10" stroke-linecap="round"/>
+  <path d="m105 55 16 15-16 15" fill="none" stroke="#E7A84B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
