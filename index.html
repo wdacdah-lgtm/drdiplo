@@ -3,21 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#FCFBF8">
-  <meta name="description" content="DrDiplo — your partner in diploma preparation. Independent exam preparation for South African medical diploma candidates.">
-  <title>DrDiplo — Your Partner in Diploma Preparation</title>
+  <meta name="theme-color" content="#f7f8f6">
+  <meta name="description" content="DrDiplo brand icon library. Preview, copy, and download the Doctor D logo icons.">
+  <title>DrDiplo — Brand Icons</title>
   <style>
+    :root { color-scheme: light; --teal:#147D78; --ink:#17324D; --paper:#FCFBF8; --muted:#60717d; --line:#e2e8e7; }
     * { box-sizing: border-box; }
-    html, body { margin: 0; min-height: 100%; background: #f2f5f6; }
-    body { display: grid; place-items: start center; padding: 24px; font-family: Inter, Arial, sans-serif; }
-    main { width: min(100%, 1440px); }
-    img { display: block; width: 100%; height: auto; border-radius: 18px; box-shadow: 0 18px 60px rgba(23,50,77,.10); }
-    @media (max-width: 600px) { body { padding: 0; } img { border-radius: 0; } }
+    body { margin:0; background:#f7f8f6; color:var(--ink); font:16px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { width:min(100% - 40px, 1060px); margin:0 auto; padding:50px 0 64px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:42px; }
+    .brand { display:flex; align-items:center; gap:13px; font-size:22px; font-weight:800; letter-spacing:-.045em; }
+    .brand img { width:42px; height:42px; }
+    .label { color:var(--teal); font-size:12px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+    h1 { margin:10px 0 8px; max-width:680px; font-size:clamp(36px,6vw,58px); line-height:1.02; letter-spacing:-.055em; }
+    .intro { max-width:620px; margin:0; color:var(--muted); font-size:17px; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:34px; }
+    .card { overflow:hidden; border:1px solid var(--line); border-radius:20px; background:#fff; box-shadow:0 8px 26px rgba(23,50,77,.045); }
+    .preview { display:grid; place-items:center; min-height:254px; padding:30px; background:var(--paper); }
+    .preview img { width:min(100%,180px); height:180px; object-fit:contain; }
+    .details { padding:20px; }
+    h2 { margin:0; font-size:18px; letter-spacing:-.02em; }
+    .details p { min-height:46px; margin:5px 0 17px; color:var(--muted); font-size:14px; }
+    .actions { display:flex; gap:9px; }
+    button { flex:1; min-height:42px; border:1px solid var(--line); border-radius:11px; background:#fff; color:var(--ink); font:inherit; font-size:13px; font-weight:700; cursor:pointer; }
+    button.primary { border-color:var(--teal); background:var(--teal); color:#fff; }
+    button:hover { filter:brightness(.96); }
+    .hint { margin:23px 0 0; color:var(--muted); font-size:13px; }
+    footer { margin-top:46px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; }
+    .toast { position:fixed; inset:auto 18px 18px auto; padding:10px 15px; border-radius:10px; background:var(--ink); color:white; opacity:0; transform:translateY(8px); transition:.18s ease; pointer-events:none; }
+    .toast.show { opacity:1; transform:translateY(0); }
+    @media (max-width:760px) { .grid { grid-template-columns:1fr; } .preview { min-height:220px; } .details p { min-height:0; } main { padding-top:30px; } }
   </style>
 </head>
 <body>
   <main>
-    <img src="homepage.svg" alt="DrDiplo homepage concept with the Doctor D mascot, course preparation message, and three study-support features">
+    <header><div class="brand"><img src="icons/dr-d-scrubs.svg" alt=""><span>DrDiplo</span></div><span class="label">Brand icon library</span></header>
+    <section aria-labelledby="title">
+      <div class="label">Choose an icon</div>
+      <h1 id="title">Meet Doctor D.</h1>
+      <p class="intro">Preview the DrDiplo icons, then copy the SVG code or download an individual file to use in your own page.</p>
+    </section>
+    <section class="grid" aria-label="DrDiplo icon options">
+      <article class="card" data-file="icons/dr-d-scrubs.svg" data-name="dr-d-scrubs.svg">
+        <div class="preview"><img src="icons/dr-d-scrubs.svg" alt="Doctor D wearing ink scrubs"></div>
+        <div class="details"><h2>Doctor D · Scrubs</h2><p>The primary character icon in deep-ink scrubs.</p><div class="actions"><button class="primary copy">Copy SVG</button><button class="download">Download</button></div></div>
+      </article>
+      <article class="card" data-file="icons/dr-d-white-coat.svg" data-name="dr-d-white-coat.svg">
+        <div class="preview"><img src="icons/dr-d-white-coat.svg" alt="Doctor D wearing a white coat"></div>
+        <div class="details"><h2>Doctor D · White coat</h2><p>An alternate character icon with the white-coat look.</p><div class="actions"><button class="primary copy">Copy SVG</button><button class="download">Download</button></div></div>
+      </article>
+      <article class="card" data-file="icons/drdiplo-d-icon.svg" data-name="drdiplo-d-icon.svg">
+        <div class="preview"><img src="icons/drdiplo-d-icon.svg" alt="DrDiplo teal D symbol"></div>
+        <div class="details"><h2>DrDiplo · D icon</h2><p>A compact standalone symbol for small spaces and app icons.</p><div class="actions"><button class="primary copy">Copy SVG</button><button class="download">Download</button></div></div>
+      </article>
+    </section>
+    <p class="hint">SVG files stay sharp at any size. Use Download for the file, or Copy SVG to paste the full markup into your source.</p>
+    <footer>DrDiplo is an independent educational resource and is not affiliated with or endorsed by CMSA.</footer>
   </main>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script>
+    const toast = document.querySelector('.toast');
+    function notify(message) { toast.textContent = message; toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 1800); }
+    document.querySelectorAll('.card').forEach(card => {
+      card.querySelector('.copy').addEventListener('click', async () => {
+        const response = await fetch(card.dataset.file);
+        await navigator.clipboard.writeText(await response.text());
+        notify('SVG copied to clipboard');
+      });
+      card.querySelector('.download').addEventListener('click', async () => {
+        const response = await fetch(card.dataset.file);
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a'); link.href = url; link.download = card.dataset.name; link.click();
+        URL.revokeObjectURL(url); notify('Icon downloaded');
+      });
+    });
+  </script>
 </body>
 </html>
